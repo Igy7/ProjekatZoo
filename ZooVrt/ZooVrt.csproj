@@ -198,6 +198,7 @@
     <Compile Include="Areas\Korisnik\Controllers\DogadjajController.cs" />
     <Compile Include="Areas\Korisnik\Controllers\RezervacijaController.cs" />
     <Compile Include="Areas\Korisnik\KorisnikAreaRegistration.cs" />
+    <Compile Include="Areas\Korisnik\Models\SmallButtonModel.cs" />
     <Compile Include="Areas\Radnik\Controllers\DogadjajController.cs" />
     <Compile Include="Areas\Radnik\Controllers\RezervacijaController.cs" />
     <Compile Include="Areas\Radnik\Controllers\TerminController.cs" />
@@ -269,6 +270,15 @@
     <Content Include="Areas\Radnik\Views\Termin\Delete.cshtml" />
     <Content Include="Areas\Radnik\Views\Termin\Create.cshtml" />
     <Content Include="Areas\Radnik\Views\Shared\_DetailsButtonPartial.cshtml" />
+<<<<<<< HEAD
+=======
+    <Content Include="Areas\Korisnik\Views\Shared\_DetaljiODogadjajuPartial.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Shared\_NapraviRezervacijuPartial.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Shared\_BackToListButtonPartial.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Shared\_EditButtonPartial.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Shared\_SmallButtonPartial.cshtml" />
+    <Content Include="Areas\Korisnik\Views\Shared\_TableButtonsPartial.cshtml" />
+>>>>>>> a9ff0bf14b1ae01d47afef0110d4c85885734605
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -322,7 +332,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Korisnik\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
