@@ -1,16 +1,24 @@
 ﻿@model IEnumerable<ZooVrt.Entities.Rezervacija>
+<<<<<<< HEAD
+
+=======
 @using ZooVrt.Areas.Korisnik.Models;
+>>>>>>> a9ff0bf14b1ae01d47afef0110d4c85885734605
 @{
     ViewBag.Title = "Index";
 }
+<<<<<<< HEAD
 <br />
 <br />
 <h2><b>Rezervacije</b></h2>
 <br />
+=======
+
+<h2>Index</h2>
+
+>>>>>>> a0cb6947c8a6e2d814dfdcf89844cef291e1c3aa
 <p>
-    <div>
-        @Html.Partial("_NapraviRezervacijuPartial")
-    </div>
+    @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table table-striped">
     <tr class="success">
@@ -28,6 +36,31 @@
         </th>
         <th></th>
     </tr>
+<<<<<<< HEAD
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.korisnickoIme)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dogadjaj)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.termin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.brRezervisanihKarata)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.rezervacijaID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.rezervacijaID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.rezervacijaID })
+        </td>
+    </tr>
+}
+
+=======
     @foreach (var item in Model)
     {
         <tr>
@@ -47,4 +80,5 @@
            new SmallButtonModel { rezervacijaId = item.rezervacijaID })
         </tr>
     }
+>>>>>>> a9ff0bf14b1ae01d47afef0110d4c85885734605
 </table>

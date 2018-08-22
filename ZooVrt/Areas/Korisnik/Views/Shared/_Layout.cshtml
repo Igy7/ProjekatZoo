@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Zoo Vrt</title>
+    <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Styles.Render("~/Content/ZooVrt")
@@ -18,28 +18,43 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+<<<<<<< HEAD
                 <a class="navbar-brand" href="/Home/Index/">
                     <img src="~/Content/Logos/logo1.png" />
                 </a>                
+=======
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+>>>>>>> a0cb6947c8a6e2d814dfdcf89844cef291e1c3aa
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     @Html.Partial("_KorisnikMenuPartial")
                 </ul>
-                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Zoo Vrt</p>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+<<<<<<< HEAD
     @Scripts.Render("~/bundles/radnik")
+=======
+<<<<<<< HEAD
+=======
+@*@<<<<<<< HEAD
+=======*@
+    @Scripts.Render("~/bundles/radnik")
+@*>>>>>>> 6a6f013b89bace1c2ed7f92d263c9247c470a8e3*@
+>>>>>>> a9ff0bf14b1ae01d47afef0110d4c85885734605
+>>>>>>> a0cb6947c8a6e2d814dfdcf89844cef291e1c3aa
     @Scripts.Render("~/bundles/korisnik")
     @RenderSection("scripts", required: false)
 </body>
